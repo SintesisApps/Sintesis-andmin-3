@@ -507,6 +507,7 @@ body{
 	z-index:2;
 	vertical-align:top;
 	margin-bottom:-3px;
+	position:fixed;
 		}
 	/*Slide Principal*/
 .ContenedorSlidePrincipal {
