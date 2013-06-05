@@ -56,15 +56,17 @@ function fix_footer()
     
     <!-- carga de noticias -->
     <script>
+	$(window).resize(function(){fix_footer()});
 			$(document).ready(function(e) {
 				document.addEventListener("deviceready", function(){
 				 //mantenemos el loding por 7 segundo
 				//alert("conexion:"+navigator.connection.type);
+				fix_footer()
 					slidePrincipal();
 					slideVertical();
 					CargarNoticiasHomeGal();
-					$(window).resize(function(){fix_footer()});
-					$(document).ready(function(){fix_footer()});
+					
+					
 				
                
 				setInterval(function(){document.getElementById("cargando").style.display='none'},12000);
