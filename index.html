@@ -31,24 +31,7 @@
 	<link href="js/galeria/photoswipe.css" type="text/css" rel="stylesheet" />
 	<script type="text/javascript" src="js/galeria/lib/klass.min.js"></script>
 	<script type="text/javascript" src="js/galeria/code.photoswipe-3.0.4.min.js"></script>
-<script type="text/javascript" >
 
-function fix_footer()
-{
-	alert('2');
-	var window_height = $(window).height();
-	var body_height = $('body').height();
-	var content_div = $('#home');
-	
-	if (window_height >= body_height) {
-	content_div.height(content_div.height() + (window_height - body_height));
-	}
-	
-	else {
-	content_div.height('');
-	}
-}
-</script>
     
 <!-- geolocalizacion -->
 <script type="text/javascript"
@@ -59,11 +42,11 @@ function fix_footer()
     <script>
 				
 			$(document).ready(function(e) {
-				alert("casd");
+				
 				document.addEventListener("deviceready", function(){
 				 //mantenemos el loding por 7 segundo
 				//alert("conexion:"+navigator.connection.type);
-				fix_footer();
+				
 					slidePrincipal();
 					slideVertical();
 					CargarNoticiasHomeGal();
