@@ -37,7 +37,7 @@ function fix_footer()
 {
 	var window_height = $(window).height();
 	var body_height = $('body').height();
-	var content_div = $('.HeaderAlternativoFooter');
+	var content_div = $('#home');
 	
 	if (window_height >= body_height) {
 	content_div.height(content_div.height() + (window_height - body_height));
